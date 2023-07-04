@@ -11,9 +11,13 @@
         <h1>¡Calculá que % te dieron de aumento!</h1>
         <p>Ingresa el valor de tu sueldo viejo en el primer input, y el valor de tu sueldo nuevo en el segundo input. El resultado va a ser el porcentaje de aumento.</p>
         <div id="calculadora">
-            <div id="inputs">
-                <input id="inputA" type="number" placeholder="Sueldo Viejo" min="1">
-                <input id="inputB" type="number" placeholder="Sueldo Nuevo" min="1">
+            <div id="inputA">
+                <label for="inputA">Sueldo Viejo</label>
+                <input id="inputA" name="inputA" type="number" min="1">
+            </div>
+            <div id="inputB">
+                <label for="inputB">Sueldo Nuevo</label>
+                <input id="inputB" name="inputB" type="number" min="1">
             </div>
             <button id="calcular">Calcular porcentaje</button>
         </div>

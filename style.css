@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Config general */
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+html{
+    font-size: 62.5%;
+}
+
 body{
+    font-size: 1.6rem;
     background-color: black;
     color: #e7b100;
     text-align: center;
@@ -6,6 +20,10 @@ body{
 
 main{
     margin: 10% auto;
+}
+
+h1{
+    margin-bottom: 1%;
 }
 
 #calculadora{
@@ -23,12 +41,46 @@ main{
     max-width: 25%;
     margin: 0 auto;
     margin-top: 3%;
-    border: 3px solid #e7b100;
+    border: 2px solid #e7b100;
     background-color: black;
+    border-radius: 2%;
     color: #dfcc8f;
 }
 
 #resultado p{
+    margin-top: 3%;
     font-weight: bolder;
     font-size: 2rem;
+}
+
+#inputA, #inputB{
+    margin-bottom: 2%;
+}
+
+input{
+    max-width: 100%;
+}
+
+@media (max-width: 768px){
+    #contenedor{
+        max-width: 80%;
+    }
+
+    #calculadora{
+        margin-bottom: 10%;
+        margin-top: 10%;
+        max-width: 50%;
+    }
+
+    #calcular{
+        max-width: 100%;
+    }
+
+    h1{
+      margin-bottom: 10%;  
+    }
+
+    #resultado p{
+        margin-top: 10%;
+    }
 }
