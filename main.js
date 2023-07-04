@@ -15,8 +15,8 @@ function renderPorcentaje(){
     const h2 = document.createElement('h2')
     h2.innerText = 'Porcentaje entre los dos sueldos:'
     const p = document.createElement('p')
-    const resultado = porcentajeAumentoAnual(inputB.value, inputA.value)
-    p.innerText = resultado == NaN ? `${resultado}%` : 'Te falto ingresar algún valor'
+    const resultado = porcentajeAumentoAnual(inputB.value,inputA.value)
+    p.innerText = !isNaN(resultado) && isFinite(resultado) ? `${resultado}%` : 'Te falto ingresar algún valor'
     divResultado.append(h2, p)
 }
 
