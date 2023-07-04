@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    color: #e7b100;
+    text-align: center;
+}
+
+main{
+    margin: 10% auto;
+}
+
+#calculadora{
+    margin: 2% auto;
+    padding: 2%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #e7b100;
+    border-radius: 2%;
+}
+
+#calcular{
+    padding: 1%;
+    max-width: 25%;
+    margin: 0 auto;
+    margin-top: 3%;
+    border: 3px solid #e7b100;
+    background-color: black;
+    color: #dfcc8f;
+}
+
+#resultado p{
+    font-weight: bolder;
+    font-size: 2rem;
+}
